@@ -1,0 +1,21 @@
+File_Descriptions_of python files in Dataset1, and the order in which they should be run.
+
+1)metaextract - This file finds all the meta pages from our pages.tsv database and creates a new database with the information whether the page is a meta page or not and stores it in pageType.csv
+2)Editmetadata - Edit meta data combines the users and pages database and also adds the result of file metaextract in it to create a final database on which we ca do analysis to find different behavioural features
+3)Ebenign - This file find 10 behavioral features of benign users and makes seperate files for each features to analyze them
+4)Evandal - This file find 10 behavioral features of vandal users and makes seperate files for each features to analyze them
+5)hop_seperate - This file seperate consecyutive edit pairs based on whether one of it is of unkonwn category or not, so that we could then use the result to find 2 features related to number of hops 
+6)soup - This files fires queries to sixdegreesofwikipedia api to find number of hops between two consecutive edits
+7)ntus - This file assigns the value to the edit pairs with unknown category after counting number of hops
+8)nts - This file assigns the value to the edit pairs with known category after counting number of hops
+9)benign_append - This file merges values of 8 features of each individual edit pairs made by benign users which are independent of number of edits into one file 
+10)vandal_append - This file merges values of 8 features of each individual edit pairs made by vandal users which are independent of number of edits into one file 
+11)summary - This file summarises all feature values from each edit pair made by benign users to one value per user.
+12)summary1 - This file summarises all feature values from each edit pair made by vandal users to one value per user.
+13)mean - This file is used to normalize the values of each feature
+14)filesappend - This file is used to combine the result of number of months of databases 
+15)Svm-svc - This file is used to find the best parameters of SVM-SVC which will give the most accurate result if SVM is applied
+16)randomforest - This file is used to find the best parameters of SVM-SVC which will give the most accurate result if randomforest is applied
+17)adaboost - This file is used to find the best parameters of SVM-SVC which will give the most accurate result if adaboost is applied
+18)extratreeclassifier - This file is used to find the best parameters of SVM-SVC which will give the most accurate result if extratreeclassifier is applied
+19)train - This file is used to train our system with various machine learning algorithms and creating a model of each of those algorithms so that it can be used later to test our system.
