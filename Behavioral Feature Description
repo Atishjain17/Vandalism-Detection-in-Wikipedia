@@ -1,0 +1,13 @@
+1) First edit meta-page (fm): whether or not first page edited was meta-page or not.
+2) Consecutive re-edit of a meta-page very fast(crmv): Meta-pages edited by user within an interval of less than 3 mins
+3) Consecutive re-edit of a meta-page fast (crmf): Meta-pages edited by user within an interval between 3 and 15 mins
+4) Consecutive re-edit of a meta-page slowly (crms): Meta-pages edited by user at interval of more than 15 mins
+5) Consecutive re-edit of a normal-page very fast(crnv): Normal pages edited by user within an interval of less than 3 mins
+6) Consecutive re-edit of a normal-page fast (crnf): Normal pages edited by user within an interval between 3 and 15 mins
+7) Consecutive re-edit of a normal-page slowly (crns): Normal pages edited by user at interval of more than 15 mins
+8) Consecutive re-edit of a page fast and then very fast(crf_crv) : First a page edited by user fast and then nect page edited by him very fast
+9)Edit of a new page at distance at most 3 hops, slowly (ntus): new page edited < 3 hops and edit time more than 15 mins and category of page is not known
+10)2 occurence of edit of a new page at distance at most 3 hops, slowly (nts_nts):new page edited < 3 hops and edit time more than 15 mins
+11) Consecutive re-edit of a metapage (crmcount): Number of times a user re-edited the same meta-page consecutively.
+12) Consecutive re-edit of a normal page (crncount): Number of times a user re-edited the same normal page consecutively.
+
