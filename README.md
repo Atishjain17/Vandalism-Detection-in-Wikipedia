@@ -5,6 +5,9 @@ Goal of the project: Analyzing editing behavior patterns and using the differenc
 
 Result: Improved the accuracy of Cluebot_NG (one of the vandalism bot used by wikipedia) from 71.4 % to 83.65 %
 
+Motivation behind this project:
+Wikipedia's purpose is to benefit readers by acting as a free encyclopedia, a comprehensive written compendium that contains information on all branches of knowledge within its five pillars. Also, while Wikipedia has the potential to be a key resource in schools at all levels due to its breadth, overall quality, and free availability - the risk of exposing children to inappropriate material has been an obstacle to adoption. Likewise, the presence of vandalism has made it difficult to produce static, high-quality snapshots of Wikipedia content, such as those that the Wikipedia 1.0 project or WikiReader plans to distribute in developing countries with poor Internet connectivity. This purpose can be achieved only when it is free from vandalized articles or any registered vandal user.
+
 The folder DataSet1 contains following things:
 1) EditHistory, UserNames and PageTitles database of Wikipedia
 (Source: Database provided by VEWS (Srijan et al.), PAN 2010, PAN 2011 Dataset, and Data extracted from Wikipedia)
