@@ -16,4 +16,4 @@ The folder WikiVandalism contains:
 2) C# files which shows the result of various algorithms on testing data.
 3) Learned models.
 
-I would specially like to thank Srijan et al. for guiding me whenever I was stuck in this project. 
+I would specially like to thank Srijan et al. for guiding me whenever I was stuck in this project and for providing access to VEWS Database. 
