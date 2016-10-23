@@ -1,6 +1,8 @@
 # Vandalism-Detection-in-Wikipedia
 This is a Vandalism Detection in Wikipedia Project.
 
+Goal of the project: Analyzing editing behavior patterns and using the differences between users to flag potential vandal users. 
+
 The folder DataSet1 contains following things:
 1) EditHistory, UserNames and PageTitles database of Wikipedia
 (Source: Database provided by VEWS (Srijan et al.), PAN 2010, PAN 2011 Dataset, and Data extracted from Wikipedia)
