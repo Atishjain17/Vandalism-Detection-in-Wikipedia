@@ -3,7 +3,7 @@ This is a Vandalism Detection in Wikipedia Project.
 
 Goal of the project: Analyzing editing behavior patterns and using the differences between users to flag potential vandal users.
 
-Result: Improved the accuracy of Cluebot_NG from 71.4 % to 83.65 %
+Result: Improved the accuracy of Cluebot_NG (one of the vandalism bot used by wikipedia) from 71.4 % to 83.65 %
 
 The folder DataSet1 contains following things:
 1) EditHistory, UserNames and PageTitles database of Wikipedia
