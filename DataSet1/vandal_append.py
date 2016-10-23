@@ -1,0 +1,35 @@
+import pandas as pd
+import numpy as np
+
+edit_file = pd.read_csv("Editbenign1/vandal_2013_12.csv")
+
+crmf = pd.read_csv("Editbenign_crmf/vandal_2013_12_crmf.csv")
+crms = pd.read_csv("Editbenign_crms/vandal_2013_12_crms.csv")
+crmv = pd.read_csv("Editbenign_crmv/vandal_2013_12_crmv.csv")
+crnf = pd.read_csv("Editbenign_crnf/vandal_2013_12_crnf.csv")
+crns = pd.read_csv("Editbenign_crns/vandal_2013_12_crns.csv")
+crnv = pd.read_csv("Editbenign_crnv/vandal_2013_12_crnv.csv")
+crfv = pd.read_csv("Editbenign_crf_crv/vandal_2013_12_crf_crv.csv")
+ntus=pd.read_csv('Editbenign_ntus/vandal_2013_12_ntus.csv')
+
+merged1 = pd.merge(edit_file,crmf,how='left', left_on='counter' , right_on='counter')
+merged1.crmf.fillna(0,inplace=True)
+merged2 = pd.merge(merged1,crms,how='left', left_on='counter' , right_on='counter')
+merged2.crms.fillna(0,inplace=True)
+merged3 = pd.merge(merged2,crmv,how='left', left_on='counter' , right_on='counter')
+merged3.crmv.fillna(0,inplace=True)
+merged4 = pd.merge(merged3,crnf,how='left', left_on='counter' , right_on='counter')
+merged4.crnf.fillna(0,inplace=True)
+merged5 = pd.merge(merged4,crns,how='left', left_on='counter' , right_on='counter')
+merged5.crns.fillna(0,inplace=True)
+merged6 = pd.merge(merged5,crnv,how='left', left_on='counter' , right_on='counter')
+merged6.crnv.fillna(0,inplace=True)
+merged7 = pd.merge(merged6,crfv,how='left', left_on='counter' , right_on='counter')
+merged7.crf_crv.fillna(0,inplace=True)
+merged8 = pd.merge(merged7,ntus,how='left', left_on='counter' , right_on='counter')
+merged8.ntus.fillna(0,inplace=True)
+
+print(len(edit_file))
+print(merged8.head(10))
+print(len(merged8))
+merged8.to_csv('Editbenign2/vandal_2013_12_crs.csv',index=False, encoding='utf-8')
